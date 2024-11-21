@@ -1,0 +1,159 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    background: url('assets/logo.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 140px;
+    padding: 0;
+}
+
+header {
+    background-color: #41c8ea;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0.9;
+}
+
+h2 {
+    color: #333;
+}
+
+#vuelos-list, #aerolineas-list {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+select, input {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 1em;
+    border: 1px solid #ccc;
+}
+
+#mensajeReserva, #mensajeItinerario {
+    font-size: 1.1em;
+    color: green;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+/* Estilo para el modal */
+.modal {
+    display: none; /* Ocultamos el modal por defecto */
+    position: fixed; /* Fija el modal en la pantalla */
+    z-index: 1; /* Asegura que se vea encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Permite hacer scroll si es necesario */
+    background-color: rgb(0,0,0); /* Fondo semitransparente */
+    background-color: rgba(0,0,0,0.4); /* Fondo semitransparente */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+.close-btn {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input {
+    margin: 5px 0 15px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo general para las notificaciones */
+.notificacion {
+    background-color: #28a745; /* Color verde para éxito */
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.notificacion.error {
+    background-color: #dc3545; /* Color rojo para error */
+}
+
+.notificacion.success {
+    background-color: #28a745; /* Color verde para éxito */
+}
+
+#notificacion {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+}
+

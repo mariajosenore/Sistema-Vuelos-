@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Reservas Aéreas UCC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Sistema de Reservas Aéreas UCC</h1>
+    </header>
+
+    <div class="container">
+        <!-- Vuelos Disponibles -->
+        <h2>Vuelos Disponibles</h2>
+        <div id="vuelos-list">
+            <!-- Aquí se cargarán los vuelos disponibles -->
+        </div>
+
+        <!-- Reservar Vuelo -->
+        <h2>Reservar Vuelo</h2>
+        <div id="reservar">
+            <input type="text" id="nombre" placeholder="Nombre">
+            <input type="text" id="apellido" placeholder="Apellido">
+            <input type="email" id="email" placeholder="Email">
+            <input type="tel" id="telefono" placeholder="Teléfono">
+            <select id="vueloSelect"></select>
+            <!-- Aquí se cargarán los vuelos para seleccionar -->
+
+
+            <button id="reservarBtn">Reservar Vuelo</button>
+
+
+
+        </div>
+
+        <!-- Mostrar Itinerario -->
+        <h2>Consultar Itinerario</h2>
+        <div id="itinerario">
+            <p id="mensajeItinerario"></p>
+            <button id="mostrarItinerarioBtn">Mostrar Itinerario</button>
+
+
+        </div>
+        <div id="vuelos-list"></div>
+
+
+        <p id="mensajeReserva"></p>
+
+
+        <div id="itinerarioLista"></div>
+
+        <!-- Aerolíneas -->
+        <h2>Aerolíneas</h2>
+        <div id="aerolineas-list">
+            <!-- Aquí se cargarán las aerolíneas disponibles -->
+            <select id="aerolineaSelect">
+                <option value="">Seleccionar Aerolínea</option>
+            </select>
+            <button id="confirmarAerolineaBtn">Confirmar Aerolínea</button>
+
+
+        </div>
+        <div>
+            <!-- Formulario de Pago -->
+            <h2>Realizar Pago</h2>
+            <div id="pago">
+                <input type="number" id="monto" placeholder="Monto del Pago en COP" required>
+                <select id="metodo">
+                    <option value="Tarjeta">Tarjeta</option>
+                    <option value="Efectivo">Efectivo</option>
+                </select>
+                <button id="pagarBtn">Realizar Pago</button>
+                <p id="estadoPago">El estado del pago es: Pendiente</p>
+                <p id="mensajePago"></p> <!-- Mensaje de estado del pago -->
+
+
+
+
+
+                <!-- Notificaciones -->
+                <h2>Notificacion</h2>
+                <!-- Contenedor de notificaciones -->
+                <div id="notificacion"></div>
+                
+                <!-- Botón para mostrar las notificaciones -->
+                <button id="mostrarNotificacionesBtn">Mostrar Notificaciones</button>
+                <script src="app.js"></script>
+
+
+</body>
+
+</html>
+<script src="script.js"></script>
+</div>
+
+
+</div>
+
+
+</div>
+</div>
+
+
+</html>
